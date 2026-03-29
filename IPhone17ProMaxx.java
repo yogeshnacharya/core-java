@@ -1,4 +1,4 @@
-class LemonGreenTea {
+class IPhone17ProMaxx {
 static int refInt;
 static byte refByte;
 static short refShort;

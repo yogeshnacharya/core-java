@@ -1,4 +1,4 @@
-class LemonGreenTea {
+class DryRedChilli {
 static int refInt;
 static byte refByte;
 static short refShort;
