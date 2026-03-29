@@ -1,14 +1,22 @@
 class AcerLaptop {
-static String brand="Acer";
-static String modelName="Aspire 5 A515-58M";
-static float screenSize=15.3f;
-static String colour="Steel Gray";
-static String cpuModel="Intel Core i5-1335U";
-public static void displayAcerLaptopDetails(){
-System.out.println("Brand name:"+brand);
-System.out.println("Model Name:"+modelName);
-System.out.println("Screen Size:"+screenSize);
-System.out.println("colour:"+colour);
-System.out.println("CPU Model:"+cpuModel);
+static String brandName="Acer";
+public static void getAcerLaptopBrandDetails()
+{
+	System.out.println("Brand Name:"+brandName);
+}
+
+public static void getAcerLaptopDetails(String storage,String modelName,float screenSize,String colour,String cpuModel)
+{
+	System.out.println("Invoking AcerLaptopDetails:");
+	System.out.println("Storage:"+storage);
+	System.out.println("Model Name:"+modelName);
+	System.out.println("Screen Size:"+screenSize);
+	System.out.println("Colour:"+colour);
+	System.out.println("CPU Model:"+cpuModel);
+}
+public static void getAcerLaptopPriceDetails(int price)
+{
+	System.out.println("Invoking price Details:");
+	System.out.println("Price:"+price);
 }
 }

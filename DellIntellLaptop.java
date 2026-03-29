@@ -1,14 +1,22 @@
 class DellIntellLaptop {
-static String brand="dell";
-static String modelName="dell laptop";
-static int screenSize=14;
-static String colour="black";
-static String cpuModel="intel core 5";
-public static void displayDellLaptopDetails(){
-System.out.println("Brand name:"+brand);
-System.out.println("Model Name:"+modelName);
-System.out.println("Screen Size:"+screenSize);
-System.out.println("colour:"+colour);
-System.out.println("CPU Model:"+cpuModel);
+static String brandName="Dell";
+public static void getDellIntellLaptopBrandDetails()
+{
+	System.out.println("Brand Name:"+brandName);
+}
+
+public static void getDellIntellLaptopDetails(String storage,String modelName,float screenSize,String colour,String cpuModel)
+{
+	System.out.println("Invoking AcerLaptopDetails:");
+	System.out.println("Storage:"+storage);
+	System.out.println("Model Name:"+modelName);
+	System.out.println("Screen Size:"+screenSize);
+	System.out.println("Colour:"+colour);
+	System.out.println("CPU Model:"+cpuModel);
+}
+public static void getDellIntellLaptopPriceDetails(int price)
+{
+	System.out.println("Invoking price Details:");
+	System.out.println("Price:"+price);
 }
 }

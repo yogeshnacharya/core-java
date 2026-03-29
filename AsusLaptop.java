@@ -1,14 +1,22 @@
 class AsusLaptop {
-static String brand="Asus";
-static String modelName="Vivobook 15";
-static float screenSize=14.3f;
-static String colour="Quiet Blue";
-static String cpuModel="Intel Core i5-13420H";
-public static void displayAsusLaptopDetails(){
-System.out.println("Brand name:"+brand);
-System.out.println("Model Name:"+modelName);
-System.out.println("Screen Size:"+screenSize);
-System.out.println("colour:"+colour);
-System.out.println("CPU Model:"+cpuModel);
+static String brandName="Asus";
+public static void getAsusLaptopBrandDetails()
+{
+	System.out.println("Brand Name:"+brandName);
+}
+
+public static void getAsusLaptopDetails(String storage,String modelName,float screenSize,String colour,String cpuModel)
+{
+	System.out.println("Invoking AsusLaptopDetails:");
+	System.out.println("Storage:"+storage);
+	System.out.println("Model Name:"+modelName);
+	System.out.println("Screen Size:"+screenSize);
+	System.out.println("Colour:"+colour);
+	System.out.println("CPU Model:"+cpuModel);
+}
+public static void getAsusLaptopPriceDetails(int price)
+{
+	System.out.println("Invoking price Details:");
+	System.out.println("Price:"+price);
 }
 }
