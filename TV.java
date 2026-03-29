@@ -1,28 +1,34 @@
-class TV
+class Tv
 {
-    static float tvPrice = 65000.5f;
-    static String tvBrand = "Sony";
-    static int manufacturerYear = 2015;
-
-    public static void getTvDetails()
-    {
-        System.out.println("Tv price: " + tvPrice);
-    }
-
-    public static String getTvBrand()
-    {
-        System.out.println("Tv Brand: " + tvBrand);
-        return tvBrand;
-    }
-
-    public static String getTvManufacturer(String manufacturer)
-    {
-        System.out.println("Laptop Manufacturer: " + manufacturer);
-        return manufacturer;
-    }
-
-    public static void getTvManufacturingYear()
-    {
-        System.out.println("Tv Manufacturing Year: " + manufacturerYear);
-    }
+    String brand;
+    int size;
+    double price;
+    String type;
+    boolean smartTV;
+    int warranty;
+	
+	public Tv(String brand,int size,double price,String type,boolean smartTV,int warranty)
+	{
+		System.out.println("I am Tv constructors with parameter:"+ brand);
+		System.out.println("I am Tv constructors with parameter:"+ size);
+		System.out.println("I am Tv constructors with parameter:"+ price);
+		System.out.println("I am Tv constructors with parameter:"+ type);
+		System.out.println("I am Tv constructors with parameter:"+ smartTV);
+		System.out.println("I am Tv constructors with parameter:"+ warranty);
+	}
+	
+	public Tv()
+	{
+		System.out.println("I am Tv Constructors with no parameter");
+	}
+	
+	public void getTvDetails()
+	{
+		System.out.println("Brand:"+brand);
+		System.out.println("Size:"+size);
+		System.out.println("Price:"+price);
+		System.out.println("Type:"+type);
+		System.out.println("Smart Tv:"+smartTV);
+		System.out.println("Warranty:"+warranty);
+	}
 }

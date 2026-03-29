@@ -1,28 +1,34 @@
 class Laptop
 {
-    static float laptopPrice = 25000.7f;
-    static String laptopBrand = "Dell";
-    static int manufacturerYear = 2012;
-
-    public static void getLaptopDetails()
-    {
-        System.out.println("Laptop price: " + laptopPrice);
-    }
-
-    public static String getLaptopBrand()
-    {
-        System.out.println("Laptop Brand: " + laptopBrand);
-        return laptopBrand;
-    }
-
-    public static String getLaptopManufacturer(String manufacturer)
-    {
-        System.out.println("Laptop Manufacturer: " + manufacturer);
-        return manufacturer;
-    }
-
-    public static void getLaptopManufacturingYear()
-    {
-        System.out.println("Laptop Manufacturing Year: " + manufacturerYear);
-    }
+	String brand;
+    String processor;
+    double price;
+    int ram;
+    int storage;
+    String os;
+	
+	public Laptop(String brand,String processor,double price,int ram,int storage,String os)
+	{
+		System.out.println("I am Laptop constructors with parameter:"+ brand);
+		System.out.println("I am Laptop constructors with parameter:"+ processor);
+		System.out.println("I am Laptop constructors with parameter:"+ price);
+		System.out.println("I am Laptop constructors with parameter:"+ ram);
+		System.out.println("I am Laptop constructors with parameter:"+ storage);
+		System.out.println("I am Laptop constructors with parameter:"+ os);
+	}
+	
+	public Laptop()
+	{
+		System.out.println("I am Laptop Constructors without parameter");
+	}
+	
+	public void getLaptopDetails()
+	{
+		System.out.println("Brand:"+brand);
+		System.out.println("Processor:"+processor);
+		System.out.println("Price:"+price);
+		System.out.println("RAM:"+ram);
+		System.out.println("Storage:"+storage);
+		System.out.println("OS:"+os);
+	}
 }

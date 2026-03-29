@@ -1,28 +1,34 @@
 class Watch
 {
-    static float watchPrice = 2000.1f;
-    static String watchBrand = "Fast Track";
-    static int manufacturerYear = 2017;
-
-    public static void getWatchDetails()
-    {
-        System.out.println("Watch price: " + watchPrice);
-    }
-
-    public static String getWatchBrand()
-    {
-        System.out.println("Watch Brand: " + watchBrand);
-        return watchBrand;
-    }
-
-    public static String getWatchManufacturer(String manufacturer)
-    {
-        System.out.println("Watch Manufacturer: " + manufacturer);
-        return manufacturer;
-    }
-
-    public static void getWatchManufacturingYear()
-    {
-        System.out.println("Watch Manufacturing Year: " + manufacturerYear);
-    }
+	String brand;
+    String type;
+    double price;
+    String color;
+    boolean waterproof;
+    int warranty;
+	
+	public Watch(String brand,String type,double price,String color,boolean waterproof,int warranty)
+	{
+		System.out.println("I am Watch constructors with parameter:"+ brand);
+		System.out.println("I am Watch constructors with parameter:"+ type);
+		System.out.println("I am Watch constructors with parameter:"+ price);
+		System.out.println("I am Watch constructors with parameter:"+ color);
+		System.out.println("I am Watch constructors with parameter:"+ waterproof);
+		System.out.println("I am Watch constructors with parameter:"+ warranty);
+	}
+	
+	public Watch()
+	{
+		System.out.println("I am Watch Constructors with no parameter");
+	}
+	
+	public void getWatchDetails()
+	{
+		System.out.println("Brand:"+brand);
+		System.out.println("Type:"+type);
+		System.out.println("Price:"+price);
+		System.out.println("Colour:"+color);
+		System.out.println("Water Proof:"+waterproof);
+		System.out.println("Warranty:"+warranty);
+	}
 }

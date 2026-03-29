@@ -1,26 +1,34 @@
 class Mobile
 {
-	static float mobilePrice=15000.6f;
-	static String mobileBrand="oppo A16k";
-	static int manufacturerYear=2019;
+	String brand;
+    String model;
+    double price;
+    int battery;
+    String color;
+    boolean is5G;
 	
-   public static void getMobileDetails()
-   {
-	   System.out.println("Mobile price:"+mobilePrice);
-   }
-       public static String getMobileBrand()
-	   {
-           System.out.println("Mobile Brand:"+mobileBrand);
-		   return  "mobileBrand";
-	   }		   
-	      public static String getMobileManufacturer(String manufacturer)
-		  {
-			  System.out.println("Mobile Manufacturer:"+manufacturer);
-			  return "manufacturer";
-		  }
-		     public static void  getMobileManufacturingYear()
-			 {
-				 System.out.println("Mobile Manufacturing Year:"+manufacturerYear);
-			 }
-		
+	public Mobile(String brand,String model,double price,int battery,String color,boolean is5G)
+	{
+		System.out.println("I am Mobile constructors with parameter:"+ brand);
+		System.out.println("I am Mobile constructors with parameter:"+ model);
+		System.out.println("I am Mobile constructors with parameter:"+ price);
+		System.out.println("I am Mobile constructors with parameter:"+ battery);
+		System.out.println("I am Mobile constructors with parameter:"+ color);
+		System.out.println("I am Mobile constructors with parameter:"+ is5G);
+	}
+	
+	public Mobile()
+	{
+		System.out.println("I am Mobile Constructors without parameter");
+	}
+	
+	public void getMobileDetails()
+	{
+		System.out.println("Brand:"+brand);
+		System.out.println("Model:"+model);
+		System.out.println("Price:"+price);
+		System.out.println("Battery:"+battery);
+		System.out.println("Colour:"+color);
+		System.out.println("Is 5G:"+is5G);
+	}
 }
