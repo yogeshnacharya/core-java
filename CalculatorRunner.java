@@ -1,4 +1,4 @@
-public class CalculatorRunner {
+class CalculatorRunner {
     public static void main(String[] args) {
 
         Calculator calc = new Calculator();
