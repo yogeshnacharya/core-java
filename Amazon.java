@@ -63,7 +63,7 @@ class Amazon
 	{
 		System.out.println("searching product by product name : " +productName+  " and product price " +productPrice);
 		String msg=null;
-		if(productName!=null && productPrice!=null)
+		if(productName!=null && productPrice!=0.0)
 		{
 			msg="searched product by product name : " +productName+  " and product price " +productPrice+ " is available";
 		}
@@ -73,7 +73,7 @@ class Amazon
 	{
 		System.out.println("searching product by product name : " +productName+ "and product id : " +productId);
 		String msg=null;
-		if(productName!=null && productId!=null)
+		if(productName!=null && productId!=0.0)
 		{
 			msg="searched product by product name : " +productName+  " and product id : " +productId+ " is available";
 		}
@@ -84,7 +84,7 @@ class Amazon
 	{
 		System.out.println("searching product by product name : " +productName+ " and product rating : " +rating+  " and product category : " +category);
 		String msg=null;
-		if(productName!=null && rating!=null && category!=null)
+		if(productName!=null && rating!=0.0f && category!=null)
 		{
 			msg="searched product by product name : " +productName+  " , product rating : " +rating+  "and product category : " +category+ " is available";
 		}

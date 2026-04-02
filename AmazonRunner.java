@@ -3,9 +3,9 @@ class AmazonRunner
 	public static void main(String [] amazon)
 	{
 		Amazon details=new Amazon();
-		boolean  login=details.login("Yogesh456","Yogesh@456");
+		boolean  login=details.login("Yogesh123","Yogesh@123");
 		System.out.println(login);
-		String msg=details.login("Yogesh456@gmail.com","Yogesh456@mail","7Ytr3");
+		String msg=details.login("Yogesh123@gmail.com","Yogesh123@mail","7Ytr3");
 		System.out.println(msg);
 		String msg1=details.searchProduct("laptop");
 		System.out.println(msg1);

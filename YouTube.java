@@ -41,9 +41,19 @@ class YouTube
 		System.out.println("Invoking search by movie name :" +movieName);
 		String msg=null;
 		
+		boolean isLogin =login("Yogeshnacharya","Yogesh@2005");
+		if(isLogin)
+		{
+			System.out.println("login successful");
+		
 		if(movieName!=null)
 		{
 			msg="Searched movie name :" +movieName+ " is available";
+		}
+		else{
+			msg="invalid username and regpsw";
+		}
+		return msg;
 		}
 		return msg;
 	}

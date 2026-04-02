@@ -51,7 +51,7 @@ class Swiggy
 	{
 		System.out.println("ordering food by food name : " +foodName+ " and quantity : " +quantity);
 		String msg=null;
-		if(foodName!=null && quantity!=null)
+		if(foodName!=null && quantity!=0.0)
 		{
 			msg="ordered food by food name : " +foodName+ " and quantity : " +quantity+ " is available";
 		}
@@ -62,7 +62,7 @@ class Swiggy
 	{
 		System.out.println("ordering food by food name : " +foodName+ " and price : " +price);
 		String msg=null;
-		if(foodName!=null  && price!=null)
+		if(foodName!=null  && price!=0.0)
 		{
 			msg="ordered food by food name : " +foodName+  " and price : " +price+  "is available";
 		}
@@ -84,7 +84,7 @@ class Swiggy
 	{
 		System.out.println("ordering food by food name : " +foodName+  " and delivery time in minutes : " +deliveryTime);
 		String msg=null;
-		if(foodName!=null && deliveryTime!=null)
+		if(foodName!=null && deliveryTime!=0.0f)
 		{
 			msg="ordering food by food name : " +foodName+  " and delivery time in minutes : " +deliveryTime+ " will be available and delivered";
 		}
